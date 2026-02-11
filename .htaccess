@@ -1,0 +1,49 @@
+# Standard .htaccess for RFID Library / src_lib
+RewriteEngine On
+
+# ======================================================================
+# ENVIRONMENT CONFIGURATION
+# Uncomment the line that matches your current environment.
+# ======================================================================
+
+# 1. LOCALHOST (XAMPP)
+# Use this when running on your local computer
+# RewriteBase /RFID_LIBRARY/
+
+# 2. LIVE SERVER (Tigernethost - src.edu.ph)
+# Uncomment the line below and comment out larger local line when uploading
+RewriteBase /src_lib/
+
+# ======================================================================
+# CORE RULES
+# ======================================================================
+
+# 1. Handle trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301]
+
+# 2. Remove .php extension from URL for cleaner links
+# Skip redirect if it's a POST request (to preserve login forms)
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# 3. Internal rewrite to add back .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ $1.php [NC,L]
+
+# 4. Security - Disable Directory Listing
+Options -Indexes
+
+# 5. Protect sensitive folders/files
+RewriteRule ^(includes|partials|backups|vendor|node_modules|sql)/ - [F,L]
+RewriteRule ^(\.git|\.env|\.vscode)/ - [F,L]
+
+# 6. Custom Error Handling
+# Note: Using root-relative path ensures it works in subdirectories
+# For Localhost:
+ErrorDocument 404 /RFID_LIBRARY/index.php
+# For Live Server (Uncomment on live):
+# ErrorDocument 404 /src_lib/index.php

@@ -1,0 +1,107 @@
+line 459
+
+<div class="container-fluid pt-6 pb-6">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 text-uppercase mb-5">What They’re Talking About Our Welding Work</h1>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="testimonial-img">
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                        </div>
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                        </div>
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                        </div>
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

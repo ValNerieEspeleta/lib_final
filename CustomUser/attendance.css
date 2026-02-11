@@ -1,0 +1,85 @@
+ body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('../img/movepic3.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .attendance-card {
+      width: 100%;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,.2);
+      backdrop-filter: blur(10px);
+      transition: transform .3s ease-in-out;
+    }
+    .attendance-card:hover { transform: scale(1.02); }
+
+    .attendance-icon {
+      font-size: 80px; 
+      color: #0d6efd; 
+      animation: pulse-blue 2s infinite; 
+      position: relative;
+    }
+    @keyframes pulse-blue {
+      0%,100% { text-shadow:0 0 0 rgba(13,110,253,.7); }
+      50% { text-shadow:0 0 20px rgba(13,110,253,.7); }
+    }
+    .attendance-icon.scanning::after {
+      content:""; 
+      position:absolute; 
+      top:0; 
+      left:50%;
+      width:90px; 
+      height:90px; 
+      border-radius:50%;
+      border:2px solid rgba(13,110,253,.5); 
+      transform:translateX(-50%);
+      animation:scan-ring 1.5s infinite;
+    }
+    @keyframes scan-ring {
+      0% { transform:translateX(-50%) scale(.8); opacity:1; }
+      100% { transform:translateX(-50%) scale(1.5); opacity:0; }
+    }
+
+    .status-message { font-size:1.3rem; margin-top:20px; color:#000; }
+    .in-animation { animation:pulse-green 1s ease-in-out; }
+    .out-animation { animation:pulse-red 1s ease-in-out; }
+
+    @keyframes pulse-green {
+      0% { box-shadow:0 0 0 0 rgba(25,135,84,.4); }
+      70% { box-shadow:0 0 20px 10px rgba(25,135,84,0); }
+      100% { box-shadow:0 0 0 0 rgba(25,135,84,0); }
+    }
+    @keyframes pulse-red {
+      0% { box-shadow:0 0 0 0 rgba(220,53,69,.4); }
+      70% { box-shadow:0 0 20px 10px rgba(220,53,69,0); }
+      100% { box-shadow:0 0 0 0 rgba(220,53,69,0); }
+    }
+
+    .uid-input {
+      margin-top:25px; 
+      max-width:250px; 
+      margin-left:auto; 
+      margin-right:auto;
+    }
+
+    h2 {
+      color: #000;
+    }
+
+    /* Modal image */
+    .student-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }

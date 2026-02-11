@@ -1,0 +1,339 @@
+:root {
+    --bg-color: #f4f7fa;
+    --card-bg: #ffffff;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --border-color: #e3e6f0;
+    --sidebar-bg: #ffffff;
+    --navbar-bg: #ffffff;
+}
+
+body.dark-mode {
+    --bg-color: #1a1b21;
+    --card-bg: #23242b;
+    --text-primary: #e1e1e1;
+    --text-secondary: #aaaaaa;
+    --border-color: #31333f;
+    --sidebar-bg: #23242b;
+    --navbar-bg: #23242b;
+
+    background-color: var(--bg-color) !important;
+    background: var(--bg-color) !important;
+    color: var(--text-primary);
+}
+
+body.dark-mode .main-panel,
+body.dark-mode .page-body-wrapper {
+    background: var(--bg-color) !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .card-modern,
+body.dark-mode .table-card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+}
+
+body.dark-mode .welcome-section h3,
+body.dark-mode .welcome-section p,
+body.dark-mode .card-label,
+body.dark-mode .card-value,
+body.dark-mode .table-title,
+body.dark-mode .card-footer-text {
+    color: var(--text-primary) !important;
+}
+
+body.dark-mode .content-wrapper {
+    background: var(--bg-color) !important;
+}
+
+body.dark-mode .card {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.dark-mode .card-title,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: var(--text-primary) !important;
+}
+
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode label,
+body.dark-mode td,
+body.dark-mode th {
+    color: var(--text-primary);
+}
+
+body.dark-mode .text-muted {
+    color: var(--text-secondary) !important;
+}
+
+body.dark-mode .table td,
+body.dark-mode .table th {
+    border-top: 1px solid var(--border-color) !important;
+    color: var(--text-primary);
+}
+
+body.dark-mode .table {
+    color: var(--text-primary);
+}
+
+body.dark-mode .navbar {
+    background-color: var(--navbar-bg) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode .sidebar {
+    background-color: var(--sidebar-bg) !important;
+}
+
+body.dark-mode .sidebar .nav-link {
+    color: var(--text-secondary);
+}
+
+body.dark-mode .sidebar .nav-link:hover,
+body.dark-mode .sidebar .nav-item.active .nav-link {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .sidebar .nav-item.active {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+body.dark-mode .navbar .navbar-brand-wrapper {
+    background-color: var(--navbar-bg) !important;
+}
+
+
+
+body.dark-mode .dropdown-menu {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .dropdown-item {
+    color: var(--text-primary) !important;
+}
+
+body.dark-mode .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: #fff !important;
+}
+
+body.dark-mode .dropdown-divider {
+    border-top: 1px solid var(--border-color) !important;
+}
+
+body.dark-mode .footer {
+    background-color: var(--navbar-bg) !important;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+body.dark-mode .form-control {
+    background-color: #2b2d35 !important;
+    border: 1px solid #41434e !important;
+    color: #fff !important;
+}
+
+body.dark-mode .form-control:focus {
+    background-color: #31333f !important;
+}
+
+body.dark-mode .modal-content {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary);
+}
+
+body.dark-mode .modal-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+body.dark-mode .modal-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+body.dark-mode .close,
+body.dark-mode .btn-close {
+    color: var(--text-primary);
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Settings Panel Dark Mode */
+body.dark-mode .sidebar-wrapper {
+    background-color: #23242b !important;
+    color: #e1e1e1 !important;
+    border: 1px solid #31333f;
+}
+
+/* Login Page Dark Mode */
+body.dark-mode .auth-form-light {
+    background: #23242b !important;
+    border: 1px solid #31333f !important;
+    color: #e1e1e1 !important;
+}
+
+body.dark-mode .form-label,
+body.dark-mode .system-title {
+    color: #fff !important;
+}
+
+body.dark-mode footer {
+    background: #1a1b21 !important;
+    border-top: 1px solid #31333f !important;
+}
+
+body.dark-mode .footer-brand,
+body.dark-mode .footer-links span {
+    color: #e1e1e1 !important;
+}
+
+body.dark-mode {
+    background-color: #1a1b21 !important;
+}
+
+body.dark-mode .sidebar-title {
+    color: #fff !important;
+}
+
+/* Kiosk / Attendance Page Dark Mode */
+body.dark-mode .attendance-wrapper .current-student-card,
+body.dark-mode .attendance-wrapper .ready-to-scan,
+body.dark-mode .attendance-wrapper .scanner-card,
+body.dark-mode .attendance-wrapper .records-wrapper {
+    background: #23242b !important;
+    border-color: #31333f !important;
+    color: #e1e1e1 !important;
+}
+
+body.dark-mode .attendance-wrapper .info-box {
+    background: #2b2d35 !important;
+}
+
+body.dark-mode .attendance-wrapper .info-label {
+    color: #888 !important;
+}
+
+body.dark-mode .attendance-wrapper .info-value {
+    color: #818cf8 !important;
+}
+
+body.dark-mode .attendance-wrapper .ready-title {
+    color: #fff !important;
+}
+
+body.dark-mode .attendance-wrapper .clock-display {
+    color: #818cf8 !important;
+}
+
+body.dark-mode .attendance-wrapper .rfid-input-field {
+    background: #1a1b21 !important;
+    border-color: #31333f !important;
+    color: #818cf8 !important;
+}
+
+body.dark-mode .attendance-wrapper .record-item {
+    border-bottom-color: #31333f !important;
+}
+
+body.dark-mode .attendance-wrapper .record-item div[style*="color:#1e293b"] {
+    color: #fff !important;
+}
+
+body.dark-mode footer[style*="background: #0f172a"] {
+    background: #0a0f1a !important;
+}
+
+/* Dashboard Toggle Wrapper */
+body.dark-mode .theme-switch-wrapper.bg-white {
+    background-color: #2b2d35 !important;
+    border-color: #31333f !important;
+}
+
+body.dark-mode .settings-section h5 {
+    color: #bbb !important;
+}
+
+body.dark-mode .settings-section {
+    border-bottom: 1px solid #31333f !important;
+}
+
+/* Smooth transition */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.card,
+.navbar,
+.sidebar,
+.footer,
+.content-wrapper {
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* Custom switch styling */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 50px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 16px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 16px;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #4B49AC;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

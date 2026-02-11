@@ -1,0 +1,9 @@
+.menu-arrow {
+  transition: transform 0.3s ease;
+  margin-left: auto; /* pushes arrow to the right */
+}
+
+/* When dropdown is open, rotate the arrow */
+.nav-link[aria-expanded="true"] .menu-arrow {
+  transform: rotate(90deg);
+}
